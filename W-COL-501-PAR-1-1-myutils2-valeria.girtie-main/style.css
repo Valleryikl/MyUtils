@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    margin: 1%;
+}
+button {
+    width: 15%;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.title {
+    animation: font 2.5s infinite ease-in-out;
+}
+@keyframes font {
+    from{
+        transform: scale(1);
+    } 50% {
+        transform: scale(1.01);
+    } to {
+        transform: scale(1);
+    }
+}
+.todo {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+.todo__task {
+    width: 80%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.todo__task::placeholder {
+    font-style: italic;
+    color: rgb(68, 68, 68);
+}
+.todo__btn {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 20%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.group {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.group__in-progress {
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid rgb(0, 0, 0);
+}
+.in-progress__title,
+.completed__title {
+    margin-bottom: 5px;
+}
+.group__completed {
+    width: 50%;
+    text-align: center;
+    border-left: 1px solid rgb(0, 0, 0);
+}
+.groupe-btn {
+    display: flex;
+    gap: 10px;
+    height: 30px;
+}
+.btn {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
